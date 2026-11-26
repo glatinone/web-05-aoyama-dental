@@ -1,0 +1,580 @@
+<title>Aoyama Dental Studio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="fa/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Hanken+Grotesk:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ivory: { 50:'#FBF8F3', 100:'#F8F4EE', 200:'#F1EBE2', 300:'#E4DACC' },
+        sakura: { 100:'#F7ECE9', 200:'#F2DEDA', 300:'#E7C4BE', 500:'#C98F86' },
+        ink: { 900:'#23211F', 700:'#3A3734', 500:'#6E6862', 400:'#948C84' },
+        gold: { 400:'#C2A375', 500:'#A8875A', 600:'#8C6E45' }
+      },
+      fontFamily: {
+        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        sans: ['"Hanken Grotesk"', 'system-ui', 'sans-serif'],
+        jp: ['"Noto Serif JP"', 'serif']
+      },
+      letterSpacing: { label: '0.24em' }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { -webkit-font-smoothing: antialiased; }
+  .gold-brush { background: linear-gradient(100deg,#8C6E45 0%,#C2A375 40%,#A8875A 60%,#D4BC94 85%,#A8875A 100%); }
+  .vertical-jp { writing-mode: vertical-rl; }
+</style>
+<script>document.addEventListener('DOMContentLoaded',()=>document.body.classList.add(...["bg-ivory-100", "text-ink-900", "font-sans", "font-light"]))</script>
+<!-- HEADER -->
+<header id="header" class="sticky top-0 z-40 bg-ivory-100/85 backdrop-blur border-b border-ivory-300/70">
+  <div class="max-w-[1360px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <span class="w-9 h-9 rounded-full border border-gold-500 flex items-center justify-center font-jp text-sm text-gold-600">青</span>
+      <span class="leading-none">
+        <span class="block font-display text-2xl tracking-tight">Aoyama Dental Studio</span>
+        <span class="block text-[9px] uppercase tracking-label text-ink-500 mt-1">Boutique dentistry · Tokyo</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-10 text-[13px] text-ink-700">
+      <a href="#founders" class="hover:text-gold-600 transition">Studio</a>
+      <a href="#treatments" class="hover:text-gold-600 transition">Treatments</a>
+      <a href="#journey" class="hover:text-gold-600 transition">Smile Design</a>
+      <a href="#gallery" class="hover:text-gold-600 transition">Clinic</a>
+      <a href="#booking" class="hover:text-gold-600 transition">Visit</a>
+    </nav>
+    <div class="flex items-center gap-5">
+      <div class="hidden md:flex items-center text-[11px] tracking-label uppercase">
+        <button class="text-ink-900 font-medium">EN</button><span class="mx-2 text-ink-400">/</span><button class="text-ink-400 hover:text-ink-900 font-jp normal-case tracking-normal text-xs">日本語</button>
+      </div>
+      <a href="#booking" class="hidden sm:inline-flex items-center gap-2 bg-ink-900 text-ivory-100 hover:bg-ink-700 transition rounded-full px-6 py-3 text-[13px] font-normal">Book a consultation</a>
+      <button class="lg:hidden w-10 h-10 rounded-full border border-ink-900/20 flex items-center justify-center"><i class="fa-solid fa-bars text-sm"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="relative overflow-hidden">
+  <div class="max-w-[1360px] mx-auto px-6 lg:px-12 pt-14 lg:pt-20 pb-20 grid lg:grid-cols-12 gap-10 lg:gap-12 items-end">
+    <div class="lg:col-span-6 relative z-10 lg:pb-16">
+      <div class="flex items-center gap-4 mb-10">
+        <span class="h-px w-12 gold-brush"></span>
+        <p class="text-[11px] uppercase tracking-label text-gold-600">Minami-Aoyama · Since 2010</p>
+      </div>
+      <h1 class="font-display font-light text-[64px] sm:text-[88px] lg:text-[120px] leading-[0.9] tracking-[-0.02em]">
+        Your smile,<br><span class="italic text-ink-700">quietly</span><br>perfected.
+      </h1>
+      <p class="mt-10 max-w-md text-[17px] leading-relaxed text-ink-500">Cosmetic and preventive dentistry in a sunlit studio off Omotesando. One patient at a time, unhurried appointments, and results that look simply like you — only rested.</p>
+      <div class="mt-12 flex flex-wrap items-center gap-6">
+        <a href="#booking" class="group inline-flex items-center gap-4 bg-ink-900 text-ivory-100 rounded-full pl-8 pr-2 py-2 text-sm hover:bg-ink-700 transition">
+          Book a consultation
+          <span class="w-11 h-11 rounded-full gold-brush flex items-center justify-center text-ink-900 group-hover:translate-x-0.5 transition"><i class="fa-solid fa-arrow-right text-xs"></i></span>
+        </a>
+        <a href="#treatments" class="text-sm text-ink-700 border-b border-ink-900/30 hover:border-gold-500 hover:text-gold-600 pb-1 transition">Explore treatments</a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-6 relative">
+      <div class="absolute -top-6 -left-6 w-40 h-40 rounded-full bg-sakura-200 hidden lg:block"></div>
+      <div class="relative aspect-[4/5] lg:aspect-[5/6] overflow-hidden rounded-t-[220px] rounded-b-sm">
+        <img data-image-key="hero" src="img/04.jpg" alt="Sunlit minimalist treatment room at Aoyama Dental Studio" class="w-full h-full object-cover">
+      </div>
+      <div class="absolute -left-4 lg:-left-16 bottom-10 bg-ivory-50 shadow-xl shadow-ink-900/5 rounded-sm px-6 py-5 flex items-center gap-4 max-w-[280px]">
+        <span class="w-10 h-10 rounded-full bg-sakura-200 flex items-center justify-center text-sakura-500"><i class="fa-regular fa-calendar"></i></span>
+        <div>
+          <p class="text-[10px] uppercase tracking-label text-ink-400">Next consultation</p>
+          <p class="text-sm text-ink-900 mt-0.5">Thursday, 10:30 · 2 slots left</p>
+        </div>
+      </div>
+      <p class="vertical-jp font-jp text-sm tracking-[0.5em] text-ink-400 absolute -right-2 lg:-right-8 top-10 hidden md:block">静かに、美しく。</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section id="trust" class="border-y border-ivory-300 bg-ivory-50">
+  <div class="max-w-[1360px] mx-auto px-6 lg:px-12 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-[1fr_1fr_1fr_1.3fr] divide-y sm:divide-y-0 sm:divide-x divide-ivory-300">
+    <div class="py-10 sm:pr-10 flex items-baseline gap-4">
+      <p class="font-display text-6xl font-light">15</p>
+      <p class="text-sm text-ink-500 leading-snug">years of practice<br>in Aoyama</p>
+    </div>
+    <div class="py-10 sm:px-10 flex items-baseline gap-4">
+      <p class="font-display text-6xl font-light">12,000</p>
+      <p class="text-sm text-ink-500 leading-snug">smiles<br>cared for</p>
+    </div>
+    <div class="py-10 sm:px-10 flex items-baseline gap-4">
+      <p class="font-display text-6xl font-light">4.9</p>
+      <p class="text-sm text-ink-500 leading-snug"><span class="text-gold-500 text-[10px] tracking-wider"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><br>Google rating</p>
+    </div>
+    <div class="py-10 lg:pl-10 hidden lg:flex items-center">
+      <p class="font-display italic text-2xl text-ink-700 leading-snug">“Discreet, precise, and the calmest dental chair in Tokyo.”<span class="block not-italic font-sans text-[11px] uppercase tracking-label text-ink-400 mt-2">— Tokyo Weekender</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDERS -->
+<section id="founders" class="py-28 lg:py-40">
+  <div class="max-w-[1360px] mx-auto px-6 lg:px-12">
+    <div class="grid lg:grid-cols-12 gap-12 mb-20">
+      <div class="lg:col-span-4">
+        <p class="text-[11px] uppercase tracking-label text-gold-600">01 · The founders</p>
+        <p class="font-jp text-ink-400 text-sm mt-4">創業者</p>
+      </div>
+      <div class="lg:col-span-8">
+        <h2 class="font-display font-light text-5xl lg:text-[76px] leading-[0.98] tracking-tight">Two dentists, one belief: <span class="italic text-ink-500">the best work is the work no one notices.</span></h2>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 lg:gap-16">
+      <article id="founder-mori" class="group">
+        <div class="aspect-[4/5] overflow-hidden rounded-sm bg-sakura-100">
+          <img data-image-key="founder-mori" src="img/04.jpg" alt="Dr. Kenji Mori" class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-700">
+        </div>
+        <div class="mt-8 grid grid-cols-[1fr_auto] gap-6 items-start">
+          <div>
+            <h3 class="font-display text-4xl">Dr. Kenji Mori</h3>
+            <p class="text-[11px] uppercase tracking-label text-gold-600 mt-2">Co-founder · Prosthodontics &amp; implants</p>
+          </div>
+          <span class="font-jp text-ink-400 text-sm mt-2">森 健二</span>
+        </div>
+        <p class="mt-5 text-ink-500 leading-relaxed max-w-lg">Trained at Tokyo Medical and Dental University and NYU. Kenji leads implant and restorative work, building each porcelain crown with our in‑house ceramist.</p>
+      </article>
+      <article id="founder-tanaka" class="group md:mt-32">
+        <div class="aspect-[4/5] overflow-hidden rounded-sm bg-sakura-100">
+          <img data-image-key="founder-tanaka" src="img/04.jpg" alt="Dr. Sara Tanaka" class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-700">
+        </div>
+        <div class="mt-8 grid grid-cols-[1fr_auto] gap-6 items-start">
+          <div>
+            <h3 class="font-display text-4xl">Dr. Sara Tanaka</h3>
+            <p class="text-[11px] uppercase tracking-label text-gold-600 mt-2">Co-founder · Cosmetic &amp; orthodontics</p>
+          </div>
+          <span class="font-jp text-ink-400 text-sm mt-2">田中 沙羅</span>
+        </div>
+        <p class="mt-5 text-ink-500 leading-relaxed max-w-lg">Raised between Kyoto and London, Sara designs smiles with digital planning and Invisalign — and consults fluently in English and Japanese.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENTS -->
+<section id="treatments" class="bg-ivory-50 py-28 lg:py-36">
+  <div class="max-w-[1360px] mx-auto px-6 lg:px-12">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
+      <div>
+        <p class="text-[11px] uppercase tracking-label text-gold-600 mb-6">02 · Treatments</p>
+        <h2 class="font-display font-light text-5xl lg:text-7xl leading-[0.98] tracking-tight">Considered care, <span class="italic">clearly priced.</span></h2>
+      </div>
+      <p class="text-sm text-ink-500 max-w-xs leading-relaxed">Every plan begins with a consultation. Prices include tax and follow‑up visits for the first year.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <article id="tr-whitening" class="group bg-ivory-100 rounded-sm overflow-hidden flex flex-col hover:shadow-xl hover:shadow-ink-900/5 transition">
+        <div class="aspect-[4/5] overflow-hidden"><img data-image-key="tr-whitening" src="img/04.jpg" alt="Whitening" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700"></div>
+        <div class="p-7 flex flex-col flex-1">
+          <p class="font-jp text-xs text-ink-400">ホワイトニング</p>
+          <h3 class="font-display text-3xl mt-2">Whitening</h3>
+          <p class="text-sm text-ink-500 mt-3 leading-relaxed flex-1">Gentle in‑studio whitening with custom trays for home touch‑ups.</p>
+          <div class="flex items-end justify-between mt-8 pt-5 border-t border-ivory-300">
+            <p class="font-display text-3xl">¥28,000</p>
+            <span class="w-9 h-9 rounded-full border border-ink-900/20 flex items-center justify-center group-hover:bg-ink-900 group-hover:text-ivory-100 transition"><i class="fa-solid fa-arrow-right text-[11px]"></i></span>
+          </div>
+        </div>
+      </article>
+      <article id="tr-invisalign" class="group bg-ivory-100 rounded-sm overflow-hidden flex flex-col hover:shadow-xl hover:shadow-ink-900/5 transition">
+        <div class="aspect-[4/5] overflow-hidden"><img data-image-key="tr-invisalign" src="img/04.jpg" alt="Invisalign" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700"></div>
+        <div class="p-7 flex flex-col flex-1">
+          <p class="font-jp text-xs text-ink-400">インビザライン</p>
+          <h3 class="font-display text-3xl mt-2">Invisalign</h3>
+          <p class="text-sm text-ink-500 mt-3 leading-relaxed flex-1">Clear aligners planned digitally, with check‑ins every six weeks.</p>
+          <div class="flex items-end justify-between mt-8 pt-5 border-t border-ivory-300">
+            <p class="font-display text-3xl"><span class="font-sans text-[10px] uppercase tracking-label text-ink-400 mr-1">from</span>¥480,000</p>
+            <span class="w-9 h-9 rounded-full border border-ink-900/20 flex items-center justify-center group-hover:bg-ink-900 group-hover:text-ivory-100 transition"><i class="fa-solid fa-arrow-right text-[11px]"></i></span>
+          </div>
+        </div>
+      </article>
+      <article id="tr-veneer" class="group bg-ivory-100 rounded-sm overflow-hidden flex flex-col hover:shadow-xl hover:shadow-ink-900/5 transition">
+        <div class="aspect-[4/5] overflow-hidden relative">
+          <img data-image-key="tr-veneer" src="img/04.jpg" alt="Porcelain veneer" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+          <span class="absolute top-4 left-4 bg-ivory-50/90 text-[10px] uppercase tracking-label px-3 py-1.5 rounded-full text-gold-600">Signature</span>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <p class="font-jp text-xs text-ink-400">セラミックベニア</p>
+          <h3 class="font-display text-3xl mt-2">Porcelain veneer</h3>
+          <p class="text-sm text-ink-500 mt-3 leading-relaxed flex-1">Hand‑layered by our ceramist for natural translucency. Per tooth.</p>
+          <div class="flex items-end justify-between mt-8 pt-5 border-t border-ivory-300">
+            <p class="font-display text-3xl">¥95,000</p>
+            <span class="w-9 h-9 rounded-full border border-ink-900/20 flex items-center justify-center group-hover:bg-ink-900 group-hover:text-ivory-100 transition"><i class="fa-solid fa-arrow-right text-[11px]"></i></span>
+          </div>
+        </div>
+      </article>
+      <article id="tr-implant" class="group bg-ivory-100 rounded-sm overflow-hidden flex flex-col hover:shadow-xl hover:shadow-ink-900/5 transition">
+        <div class="aspect-[4/5] overflow-hidden"><img data-image-key="tr-implant" src="img/04.jpg" alt="Implant" class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700"></div>
+        <div class="p-7 flex flex-col flex-1">
+          <p class="font-jp text-xs text-ink-400">インプラント</p>
+          <h3 class="font-display text-3xl mt-2">Implant</h3>
+          <p class="text-sm text-ink-500 mt-3 leading-relaxed flex-1">Guided surgery with Swiss titanium and a custom ceramic crown.</p>
+          <div class="flex items-end justify-between mt-8 pt-5 border-t border-ivory-300">
+            <p class="font-display text-3xl"><span class="font-sans text-[10px] uppercase tracking-label text-ink-400 mr-1">from</span>¥350,000</p>
+            <span class="w-9 h-9 rounded-full border border-ink-900/20 flex items-center justify-center group-hover:bg-ink-900 group-hover:text-ivory-100 transition"><i class="fa-solid fa-arrow-right text-[11px]"></i></span>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="text-xs text-ink-400 mt-8">Also offered: preventive cleaning &amp; hygiene ¥18,000 · night guards · gum contouring · ceramic inlays.</p>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey" class="py-28 lg:py-40 bg-sakura-100 relative overflow-hidden">
+  <div class="absolute -right-40 -bottom-40 w-[560px] h-[560px] rounded-full border border-sakura-300/70"></div>
+  <div class="absolute -right-20 -bottom-20 w-[360px] h-[360px] rounded-full border border-sakura-300/70"></div>
+  <div class="relative max-w-[1360px] mx-auto px-6 lg:px-12">
+    <div class="grid lg:grid-cols-12 gap-12 items-end mb-20">
+      <div class="lg:col-span-7">
+        <p class="text-[11px] uppercase tracking-label text-gold-600 mb-6">03 · Signature Smile Design</p>
+        <h2 class="font-display font-light text-5xl lg:text-7xl leading-[0.98] tracking-tight">Three unhurried steps <span class="italic">to a smile that feels yours.</span></h2>
+      </div>
+      <div class="lg:col-span-5 lg:pl-10">
+        <p class="text-ink-500 leading-relaxed">You see your new smile before we touch a single tooth. Every step is with the same dentist, in a private room, at your pace.</p>
+      </div>
+    </div>
+
+    <ol class="grid md:grid-cols-3 gap-10 lg:gap-0 lg:divide-x divide-sakura-300 border-t border-sakura-300">
+      <li id="step-consult" class="pt-10 lg:pr-12">
+        <div class="flex items-center justify-between">
+          <span class="font-display italic text-gold-500 text-2xl">i.</span>
+          <span class="text-[11px] uppercase tracking-label bg-ivory-50 rounded-full px-3 py-1.5"><i class="fa-regular fa-clock mr-1.5 text-gold-500"></i>60 min</span>
+        </div>
+        <h3 class="font-display text-5xl mt-8">Consult</h3>
+        <p class="font-jp text-xs text-ink-400 mt-2">カウンセリング</p>
+        <p class="text-ink-500 leading-relaxed mt-5 text-[15px]">A relaxed conversation over green tea: your goals, your history, a full examination and photographs.</p>
+      </li>
+      <li id="step-scan" class="pt-10 lg:px-12">
+        <div class="flex items-center justify-between">
+          <span class="font-display italic text-gold-500 text-2xl">ii.</span>
+          <span class="text-[11px] uppercase tracking-label bg-ivory-50 rounded-full px-3 py-1.5"><i class="fa-regular fa-clock mr-1.5 text-gold-500"></i>30 min</span>
+        </div>
+        <h3 class="font-display text-5xl mt-8">Digital scan</h3>
+        <p class="font-jp text-xs text-ink-400 mt-2">デジタルスキャン</p>
+        <p class="text-ink-500 leading-relaxed mt-5 text-[15px]">A painless 3D intraoral scan — no moulds — so we can design your smile to the tenth of a millimetre.</p>
+      </li>
+      <li id="step-reveal" class="pt-10 lg:pl-12">
+        <div class="flex items-center justify-between">
+          <span class="font-display italic text-gold-500 text-2xl">iii.</span>
+          <span class="text-[11px] uppercase tracking-label bg-ivory-50 rounded-full px-3 py-1.5"><i class="fa-regular fa-clock mr-1.5 text-gold-500"></i>14 days</span>
+        </div>
+        <h3 class="font-display text-5xl mt-8">Reveal</h3>
+        <p class="font-jp text-xs text-ink-400 mt-2">お披露目</p>
+        <p class="text-ink-500 leading-relaxed mt-5 text-[15px]">Two weeks later, preview your design in a trial smile and refine it together before anything is final.</p>
+      </li>
+    </ol>
+    <a href="#booking" class="inline-flex items-center gap-3 mt-16 bg-ink-900 text-ivory-100 hover:bg-ink-700 transition rounded-full px-7 py-4 text-sm">Begin with a consultation <i class="fa-solid fa-arrow-right text-xs"></i></a>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-28 lg:py-40">
+  <div class="max-w-[1360px] mx-auto px-6 lg:px-12">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+      <div>
+        <p class="text-[11px] uppercase tracking-label text-gold-600 mb-6">04 · The studio</p>
+        <h2 class="font-display font-light text-5xl lg:text-7xl leading-[0.98] tracking-tight">Light, linen, <span class="italic">and silence.</span></h2>
+      </div>
+      <p class="text-sm text-ink-500 max-w-xs leading-relaxed">Four private rooms designed with architect Yuki Hara — hinoki wood, washi screens and windows onto a maple garden.</p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-12 gap-4 lg:gap-6">
+      <figure id="g-reception" class="col-span-2 lg:col-span-7 lg:row-span-2">
+        <div class="aspect-[4/3] lg:aspect-auto lg:h-full overflow-hidden rounded-sm"><img data-image-key="g-reception" src="img/04.jpg" alt="Reception with hinoki wood and washi screens" class="w-full h-full object-cover"></div>
+      </figure>
+      <figure id="g-instruments" class="lg:col-span-5">
+        <div class="aspect-[4/3] overflow-hidden rounded-sm"><img data-image-key="g-instruments" src="img/04.jpg" alt="Dental instruments on linen" class="w-full h-full object-cover"></div>
+        <figcaption class="font-display italic text-ink-500 mt-3 text-lg">Instruments, laid out on linen</figcaption>
+      </figure>
+      <figure id="g-room" class="lg:col-span-5">
+        <div class="aspect-[4/3] overflow-hidden rounded-sm"><img data-image-key="g-room" src="img/04.jpg" alt="Private treatment room facing a maple garden" class="w-full h-full object-cover"></div>
+        <figcaption class="font-display italic text-ink-500 mt-3 text-lg">Room three, facing the maple garden</figcaption>
+      </figure>
+      <figure id="g-patient" class="lg:col-span-4">
+        <div class="aspect-[4/5] overflow-hidden rounded-sm"><img data-image-key="g-patient" src="img/04.jpg" alt="Smiling patient in soft daylight" class="w-full h-full object-cover"></div>
+      </figure>
+      <figure id="g-street" class="lg:col-span-8">
+        <div class="aspect-[4/5] lg:aspect-[16/10] overflow-hidden rounded-sm"><img data-image-key="g-street" src="img/04.jpg" alt="Zelkova-lined Omotesando avenue" class="w-full h-full object-cover"></div>
+        <figcaption class="font-display italic text-ink-500 mt-3 text-lg">Omotesando, a five‑minute walk away</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="bg-ink-900 text-ivory-100 py-28 lg:py-36">
+  <div class="max-w-[1360px] mx-auto px-6 lg:px-12">
+    <div class="grid lg:grid-cols-12 gap-12 mb-20">
+      <div class="lg:col-span-3">
+        <p class="text-[11px] uppercase tracking-label text-gold-400">05 · Patients</p>
+        <div class="mt-8 flex items-baseline gap-3">
+          <p class="font-display text-7xl font-light">4.9</p>
+          <p class="text-xs text-ivory-100/60 leading-snug">from 860<br>Google reviews</p>
+        </div>
+      </div>
+      <blockquote class="lg:col-span-9 font-display font-light text-4xl lg:text-[56px] leading-[1.08]">“I had put off my veneers for years. Dr. Tanaka showed me the result before we began, and <span class="italic text-sakura-300">now people only say I look well-rested.</span>”
+        <footer class="mt-8 flex items-center gap-4 font-sans">
+          <img data-avatar="Japanese woman, early 40s, shoulder-length dark hair, ivory blouse, gentle smile; soft editorial daylight photo" src="img/01.jpg" alt="Yui Nakamura" class="w-12 h-12 rounded-full object-cover">
+          <span class="text-sm"><span class="block text-ivory-100">Yui Nakamura</span><span class="text-ivory-100/50 text-xs">Porcelain veneers · Shibuya</span></span>
+        </footer>
+      </blockquote>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <article id="t-1" class="border border-ivory-100/10 rounded-sm p-8 flex flex-col">
+        <div class="text-gold-400 text-[10px] space-x-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="font-display text-2xl leading-snug mt-5 flex-1">“Finally a clinic in Tokyo where I can explain everything in English. Calm, punctual, beautifully run.”</p>
+        <div class="flex items-center gap-4 mt-8 pt-6 border-t border-ivory-100/10">
+          <img data-avatar="British man, mid 40s, short greying hair, navy crewneck sweater; soft editorial daylight photo" src="img/02.jpg" alt="Oliver Grant" class="w-10 h-10 rounded-full object-cover">
+          <div><p class="text-sm">Oliver Grant</p><p class="text-xs text-ivory-100/50">Invisalign · Hiroo</p></div>
+        </div>
+      </article>
+      <article id="t-2" class="border border-ivory-100/10 rounded-sm p-8 flex flex-col">
+        <div class="text-gold-400 text-[10px] space-x-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="font-display text-2xl leading-snug mt-5 flex-1">“Dr. Mori placed my implant with such care that I barely noticed. It looks exactly like my own tooth.”</p>
+        <div class="flex items-center gap-4 mt-8 pt-6 border-t border-ivory-100/10">
+          <img data-avatar="Japanese man, late 50s, silver hair, rimless glasses, charcoal blazer; soft editorial daylight photo" src="img/03.jpg" alt="Hiroshi Watanabe" class="w-10 h-10 rounded-full object-cover">
+          <div><p class="text-sm">Hiroshi Watanabe</p><p class="text-xs text-ivory-100/50">Implant · Minato</p></div>
+        </div>
+      </article>
+      <article id="t-3" class="border border-ivory-100/10 rounded-sm p-8 flex flex-col">
+        <div class="text-gold-400 text-[10px] space-x-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="font-display text-2xl leading-snug mt-5 flex-1">“The whitening was subtle and natural — exactly what I asked for before my wedding. A truly serene space.”</p>
+        <div class="flex items-center gap-4 mt-8 pt-6 border-t border-ivory-100/10">
+          <img data-avatar="Korean-American woman, late 20s, long straight dark hair, light beige knit; soft editorial daylight photo" src="img/00.jpg" alt="Grace Kim" class="w-10 h-10 rounded-full object-cover">
+          <div><p class="text-sm">Grace Kim</p><p class="text-xs text-ivory-100/50">Whitening · Daikanyama</p></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- INSURANCE & LANGUAGES -->
+<section id="support" class="py-20 lg:py-24 border-b border-ivory-300">
+  <div class="max-w-[1360px] mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-6">
+    <div id="support-insurance" class="bg-ivory-50 rounded-sm p-10 lg:p-12 flex gap-6">
+      <span class="w-12 h-12 shrink-0 rounded-full border border-gold-500 text-gold-600 flex items-center justify-center"><i class="fa-solid fa-shield-heart"></i></span>
+      <div>
+        <h3 class="font-display text-3xl">Insurance, simply handled</h3>
+        <p class="text-ink-500 mt-3 leading-relaxed text-[15px]">We accept Japanese National Health Insurance for preventive care and issue detailed English receipts for international plans — Cigna, Allianz, Bupa and more — so you can claim directly.</p>
+      </div>
+    </div>
+    <div id="support-language" class="bg-sakura-100 rounded-sm p-10 lg:p-12 flex gap-6">
+      <span class="w-12 h-12 shrink-0 rounded-full border border-gold-500 text-gold-600 flex items-center justify-center"><i class="fa-solid fa-language"></i></span>
+      <div>
+        <h3 class="font-display text-3xl">Care in your language</h3>
+        <p class="text-ink-500 mt-3 leading-relaxed text-[15px]">Every dentist and coordinator speaks English and Japanese. Consent forms, treatment plans and aftercare notes come in both.</p>
+        <div class="flex gap-2 mt-5">
+          <span class="text-xs bg-ivory-50 rounded-full px-4 py-1.5">English</span>
+          <span class="text-xs bg-ivory-50 rounded-full px-4 py-1.5 font-jp">日本語</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="py-28 lg:py-40">
+  <div class="max-w-[1360px] mx-auto px-6 lg:px-12 grid lg:grid-cols-12 gap-14 lg:gap-16">
+    <div class="lg:col-span-5">
+      <p class="text-[11px] uppercase tracking-label text-gold-600 mb-6">06 · Visit us</p>
+      <h2 class="font-display font-light text-5xl lg:text-7xl leading-[0.98] tracking-tight">Book a <span class="italic">consultation.</span></h2>
+      <p class="text-ink-500 leading-relaxed mt-6 max-w-md">Tell us a little about what you’re hoping for. Our coordinator replies within one business day to confirm your time.</p>
+
+      <div class="mt-12 aspect-[16/10] overflow-hidden rounded-sm relative">
+        <img data-image-key="location" src="img/04.jpg" alt="Quiet Aoyama side street near the clinic" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 bg-ivory-50/95 rounded-full pl-2 pr-5 py-2 flex items-center gap-3 text-sm">
+          <span class="w-8 h-8 rounded-full gold-brush flex items-center justify-center text-ink-900"><i class="fa-solid fa-person-walking text-xs"></i></span>
+          5 min from Omotesando Station, Exit B1
+        </div>
+      </div>
+      <address class="not-italic mt-8 grid grid-cols-2 gap-6 text-sm">
+        <div>
+          <p class="text-[10px] uppercase tracking-label text-ink-400 mb-2">Address</p>
+          <p class="leading-relaxed">3F, 5‑12‑8 Minami‑Aoyama<br>Minato‑ku, Tokyo 107‑0062</p>
+        </div>
+        <div>
+          <p class="text-[10px] uppercase tracking-label text-ink-400 mb-2">Contact</p>
+          <p class="leading-relaxed">+81 3 6450 2180<br>hello@aoyamadental.jp</p>
+        </div>
+      </address>
+      <a href="#" class="inline-flex items-center gap-2 mt-8 text-sm border-b border-ink-900/30 pb-1 hover:text-gold-600 hover:border-gold-500 transition"><i class="fa-solid fa-location-arrow text-xs"></i>Open in Google Maps</a>
+    </div>
+
+    <div class="lg:col-span-7">
+      <form id="booking-form" class="bg-ivory-50 rounded-sm p-8 sm:p-12 lg:p-14">
+        <div class="grid sm:grid-cols-2 gap-x-8 gap-y-8">
+          <label class="block">
+            <span class="text-[10px] uppercase tracking-label text-ink-400">Full name</span>
+            <input type="text" required placeholder="Emma Suzuki" class="mt-2 w-full bg-transparent border-b border-ivory-300 focus:border-gold-500 outline-none py-3 text-base placeholder-ink-400/60 transition">
+          </label>
+          <label class="block">
+            <span class="text-[10px] uppercase tracking-label text-ink-400">Email</span>
+            <input type="email" required placeholder="you@example.com" class="mt-2 w-full bg-transparent border-b border-ivory-300 focus:border-gold-500 outline-none py-3 text-base placeholder-ink-400/60 transition">
+          </label>
+          <label class="block">
+            <span class="text-[10px] uppercase tracking-label text-ink-400">Phone</span>
+            <input type="tel" placeholder="+81 90 0000 0000" class="mt-2 w-full bg-transparent border-b border-ivory-300 focus:border-gold-500 outline-none py-3 text-base placeholder-ink-400/60 transition">
+          </label>
+          <label class="block">
+            <span class="text-[10px] uppercase tracking-label text-ink-400">Treatment of interest</span>
+            <select class="mt-2 w-full bg-transparent border-b border-ivory-300 focus:border-gold-500 outline-none py-3 text-base transition">
+              <option>Smile Design consultation</option><option>Whitening</option><option>Invisalign</option><option>Porcelain veneers</option><option>Implant</option><option>Preventive check‑up</option>
+            </select>
+          </label>
+          <label class="block">
+            <span class="text-[10px] uppercase tracking-label text-ink-400">Preferred date</span>
+            <input type="date" value="2025-06-12" class="mt-2 w-full bg-transparent border-b border-ivory-300 focus:border-gold-500 outline-none py-3 text-base transition">
+          </label>
+          <div>
+            <span class="text-[10px] uppercase tracking-label text-ink-400">Preferred time</span>
+            <div id="time-slots" class="mt-3 flex flex-wrap gap-2">
+              <button type="button" class="slot text-sm rounded-full px-4 py-2 border border-ivory-300 hover:border-ink-900 transition">Morning</button>
+              <button type="button" class="slot text-sm rounded-full px-4 py-2 border border-ink-900 bg-ink-900 text-ivory-100 transition">Afternoon</button>
+              <button type="button" class="slot text-sm rounded-full px-4 py-2 border border-ivory-300 hover:border-ink-900 transition">Evening</button>
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <span class="text-[10px] uppercase tracking-label text-ink-400">Consultation language</span>
+            <div class="mt-3 flex gap-6 text-sm">
+              <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="lang" checked class="accent-[#A8875A] w-4 h-4">English</label>
+              <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="lang" class="accent-[#A8875A] w-4 h-4"><span class="font-jp">日本語</span></label>
+            </div>
+          </div>
+          <label class="block sm:col-span-2">
+            <span class="text-[10px] uppercase tracking-label text-ink-400">Anything we should know?</span>
+            <textarea rows="3" placeholder="Your goals, concerns, or questions…" class="mt-2 w-full bg-transparent border-b border-ivory-300 focus:border-gold-500 outline-none py-3 text-base placeholder-ink-400/60 resize-none transition"></textarea>
+          </label>
+        </div>
+        <div class="mt-12 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+          <p id="booking-msg" class="text-xs text-ink-400 max-w-xs leading-relaxed">Consultation ¥11,000, credited to any treatment plan. Your details stay private.</p>
+          <button type="submit" class="group inline-flex items-center justify-center gap-4 bg-ink-900 text-ivory-100 rounded-full pl-8 pr-2 py-2 text-sm hover:bg-ink-700 transition">
+            Request appointment
+            <span class="w-11 h-11 rounded-full gold-brush flex items-center justify-center text-ink-900"><i class="fa-solid fa-arrow-right text-xs"></i></span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer" class="bg-ivory-200">
+  <div class="max-w-[1360px] mx-auto px-6 lg:px-12 pt-24 pb-10">
+    <div class="grid md:grid-cols-2 lg:grid-cols-12 gap-12">
+      <div class="lg:col-span-5">
+        <p class="font-display font-light text-5xl lg:text-7xl leading-[0.95] tracking-tight">Aoyama<br><span class="italic">Dental Studio</span></p>
+        <p class="font-jp text-sm text-ink-500 mt-4">青山デンタルスタジオ</p>
+        <div class="flex gap-3 mt-8">
+          <a href="#" class="w-10 h-10 rounded-full border border-ink-900/15 hover:bg-ink-900 hover:text-ivory-100 transition flex items-center justify-center"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-ink-900/15 hover:bg-ink-900 hover:text-ivory-100 transition flex items-center justify-center"><i class="fa-brands fa-line"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-ink-900/15 hover:bg-ink-900 hover:text-ivory-100 transition flex items-center justify-center"><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
+      <div class="lg:col-span-4">
+        <p class="text-[10px] uppercase tracking-label text-ink-400 mb-5">Hours</p>
+        <ul class="text-sm space-y-3">
+          <li class="flex justify-between border-b border-ivory-300 pb-3"><span>Monday – Friday</span><span class="text-ink-500">10:00 – 19:30</span></li>
+          <li class="flex justify-between border-b border-ivory-300 pb-3"><span>Saturday</span><span class="text-ink-500">10:00 – 17:00</span></li>
+          <li class="flex justify-between border-b border-ivory-300 pb-3"><span>Sunday &amp; holidays</span><span class="text-ink-500">Closed</span></li>
+        </ul>
+        <p class="text-xs text-ink-400 mt-4">Evening appointments by request.</p>
+      </div>
+      <div class="lg:col-span-3">
+        <p class="text-[10px] uppercase tracking-label text-ink-400 mb-5">Contact</p>
+        <ul class="text-sm space-y-3 text-ink-700">
+          <li>3F, 5‑12‑8 Minami‑Aoyama<br>Minato‑ku, Tokyo 107‑0062</li>
+          <li><a href="#" class="hover:text-gold-600">+81 3 6450 2180</a></li>
+          <li><a href="#" class="hover:text-gold-600">hello@aoyamadental.jp</a></li>
+          <li class="text-ink-400">Omotesando Stn. Exit B1 · 5 min</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-20 pt-8 border-t border-ivory-300 flex flex-col md:flex-row justify-between gap-4 text-xs text-ink-400">
+      <p>© 2025 Aoyama Dental Studio. Medical corporation registered in Tokyo.</p>
+      <div class="flex flex-wrap gap-6"><a href="#" class="hover:text-ink-900">Privacy</a><a href="#" class="hover:text-ink-900">Fees &amp; policies</a><a href="#" class="hover:text-ink-900">Careers</a><a href="#" class="hover:text-ink-900 font-jp">日本語サイト</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    const slots = document.querySelectorAll('#time-slots .slot');
+    slots.forEach(s => s.addEventListener('click', () => {
+      slots.forEach(o => { o.classList.remove('bg-ink-900','text-ivory-100','border-ink-900'); o.classList.add('border-ivory-300'); });
+      s.classList.add('bg-ink-900','text-ivory-100','border-ink-900'); s.classList.remove('border-ivory-300');
+    }));
+    document.getElementById('booking-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const msg = document.getElementById('booking-msg');
+      msg.textContent = 'Thank you — ありがとうございます. Our coordinator will confirm your consultation within one business day.';
+      msg.classList.remove('text-ink-400'); msg.classList.add('text-gold-600');
+    });
+  })();
+</script>
+<style id="motion">
+  /* uxpilot motion layer: added on top of the UX Pilot HTML, never edits its markup */
+  :root{--uxp-ease:cubic-bezier(.2,.7,.1,1)}
+  .uxp-head{transition:background .5s var(--uxp-ease),backdrop-filter .5s,box-shadow .5s}
+  .uxp-head.uxp-solid{background:rgba(250,248,244,.84)!important;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(0,0,0,.07)}
+  .uxp-head.uxp-solid, .uxp-head.uxp-solid *{color:#1c1a18!important}
+  .uxp-hero-img{animation:uxpKen 16s var(--uxp-ease) both;transform-origin:60% 40%}
+  @keyframes uxpKen{from{transform:scale(1.14)}to{transform:scale(1)}}
+  .uxp-hero-in{animation:uxpRise 1.3s var(--uxp-ease) both}
+  @keyframes uxpRise{from{opacity:0;transform:translateY(36px);filter:blur(8px)}}
+  .mv{transition:opacity 1.1s var(--uxp-ease),transform 1.1s var(--uxp-ease),clip-path 1.4s var(--uxp-ease)}
+  .mv.pre{opacity:0;transform:translateY(40px)}
+  .mv-img{overflow:hidden}
+  .mv-img img{transition:transform 1.6s var(--uxp-ease)}
+  .mv-img.pre{clip-path:inset(12% 0 0 0)}
+  .mv-img.pre img{transform:scale(1.18)}
+  a img, article img{transition:transform 1.2s var(--uxp-ease)}
+  a:hover img, article:hover img{transform:scale(1.05)}
+  a, button{transition:color .3s, background-color .3s, border-color .3s, transform .4s var(--uxp-ease)}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}
+    .mv.pre{opacity:1;transform:none}.mv-img.pre{clip-path:none}.mv-img.pre img{transform:none}}
+</style>
+<script id="motion-js">
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Header: if it sits on top of the hero (absolute/fixed), keep it fixed and turn it solid after 60px of scroll
+  const head = document.querySelector('#header, body > header, header');
+  if (head) {
+    const pos = getComputedStyle(head).position;
+    if (pos === 'absolute' || pos === 'fixed') {
+      head.style.position = 'fixed'; head.classList.add('uxp-head');
+      const on = () => head.classList.toggle('uxp-solid', scrollY > 60);
+      addEventListener('scroll', on, {passive: true}); on();
+    }
+  }
+  if (reduce) return;
+  // Hero: first section with an image gets a slow zoom; its headline and the next block rise in
+  const hero = document.querySelector('#hero, main > section, body > section');
+  if (hero) {
+    const img = hero.querySelector('img'); if (img) img.classList.add('uxp-hero-img');
+    const h1 = hero.querySelector('h1');
+    if (h1) { h1.classList.add('uxp-hero-in'); h1.style.animationDelay = '.15s';
+      const nx = h1.nextElementSibling; if (nx) { nx.classList.add('uxp-hero-in'); nx.style.animationDelay = '.45s'; } }
+  }
+  // Scroll reveal, only for what starts below the fold (the first screen is complete at rest)
+  const vh = innerHeight;
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.remove('pre'); io.unobserve(e.target); } }),
+    {threshold: .15, rootMargin: '0px 0px -5% 0px'});
+  const mark = (el, cls, d) => { if (el.getBoundingClientRect().top < vh) return; el.classList.add(cls, 'pre'); el.style.transitionDelay = d + 'ms'; io.observe(el); };
+  document.querySelectorAll('section, footer').forEach(sec => {
+    if (sec === hero) return;
+    sec.querySelectorAll('h2, h3, p, li, blockquote, form, a.inline-flex, button').forEach((el, i) => { if (!el.closest('.mv')) mark(el, 'mv', (i % 4) * 90); });
+    sec.querySelectorAll('img').forEach((im, i) => { const box = im.parentElement; if (box.closest('.mv-img') || im.width < 120) return; box.classList.add('mv'); mark(box, 'mv-img', (i % 3) * 120); });
+  });
+})();
+</script>
